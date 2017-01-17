@@ -42,11 +42,12 @@ app.use((req, res, next) => {
   next(); //to let the program move on to the next middleware if there's any.
 });
 
+
 app.use('/', index);
 app.use('/users', users);
 app.get('/about', about);
 app.get('/land', land);
-app.get('/ford', ford);
+app.get('/', ford);
 
 
 // catch 404 and forward to error handler
